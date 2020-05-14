@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 	try {
-		$conexion = new PDO('mysql:host=127.0.0.1;dbname=hope', 'root', '');
+		$conexion = new PDO('mysql:host=127.0.0.1;port=8889;dbname=hope', 'root', '');
 	} catch (PDOException $e) {
 		echo "Error:" . $e->getMessage();;
 	}
